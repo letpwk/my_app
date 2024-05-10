@@ -29,12 +29,12 @@ class MeuApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Wave to Earth'),
+          title: Text('Poesias - Adamastora Pitaca, feat. Adamastor Pitaco'),
         ),
         body: Center(
           child: Text(
-            'Hello World',
-            style: TextStyle(fontSize: 50, color: Colors.lightBlue),
+            'Vou te contar uma coisa...',
+            style: TextStyle(fontSize: 50, color: Colors.red),
           ),
         ),
       ),
