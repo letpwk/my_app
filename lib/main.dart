@@ -17,10 +17,18 @@ class MeuApp extends StatelessWidget {
       home: Stack(
         alignment: AlignmentDirectional.center,
         children: [
-          Container(color: Colors.red, width: 100, height: 100,),
-          Container(color: Colors.blue, width: 50, height: 50,),
+          Container(
+            color: Colors.red,
+            width: 100,
+            height: 100,
+          ),
+          Container(
+            color: Colors.blue,
+            width: 50,
+            height: 50,
+          ),
         ],
       ),
     );
-  }  
+  }
 }
