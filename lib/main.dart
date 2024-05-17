@@ -15,7 +15,9 @@ class MeuApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      home: Column(
+      home: Container(
+        color: Colors.black,
+        child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -57,9 +59,26 @@ class MeuApp extends StatelessWidget {
               Container(color: Colors.pink, height: 50, width: 50,),
               Container(color: Colors.greenAccent, height: 50, width: 50,),
             ],
-          )
+          ),
+          Container(color: Colors.amber, height: 30, width: 300,
+          child: Text('Diamante Amarelo', 
+          style: TextStyle(
+            color: Colors.black, 
+            fontSize: 28
+            ),
+            textAlign: TextAlign.center,
+            ),  
+          ),
+          ElevatedButton(
+            onPressed: (){
+              print('Você apertou o botão');
+          }, 
+          child: Text('Aperte o botão!'))
         ],
       )
+      
+      )
+      
     );
   }
 }
